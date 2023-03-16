@@ -1,0 +1,5 @@
+# CreditCardFraudDetection
+This project aims to detect credit card fraud using machine learning techniques. The dataset used for this project contains transactions made by credit cards in September 2013 by European cardholders. It presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, where the positive class (frauds) accounts for 0.172% of all transactions.
+
+# Dataset
+The dataset contains only numerical input variables, which are the result of a PCA transformation. Due to confidentiality issues, the original features and more background information about the data cannot be provided. Features V1, V2, … V28 are the principal components obtained with PCA, and the only features that have not been transformed with PCA are 'Time' and 'Amount'. The feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, and this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and takes the value 1 in case of fraud and 0 otherwise.
